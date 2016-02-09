@@ -18,23 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p5R-fP-IeX">
-                                <rect key="frame" x="180" y="154" width="240" height="128"/>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oVs-OV-aYd">
+                                <rect key="frame" x="20" y="79" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="n1A-aN-PpU"/>
-                                </constraints>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="p5R-fP-IeX" secondAttribute="trailing" constant="10" id="9eR-QE-vPA"/>
-                            <constraint firstItem="p5R-fP-IeX" firstAttribute="top" secondItem="uyW-Ft-uBT" secondAttribute="bottom" constant="10" id="aLw-KG-I2D"/>
-                            <constraint firstItem="p5R-fP-IeX" firstAttribute="leading" secondItem="nli-MU-BcL" secondAttribute="leadingMargin" constant="10" id="juw-br-svD"/>
+                            <constraint firstItem="2gC-60-jdR" firstAttribute="top" secondItem="oVs-OV-aYd" secondAttribute="bottom" id="35k-c0-NPB"/>
+                            <constraint firstAttribute="trailing" secondItem="oVs-OV-aYd" secondAttribute="trailing" id="dzK-tW-bun"/>
+                            <constraint firstItem="oVs-OV-aYd" firstAttribute="leading" secondItem="nli-MU-BcL" secondAttribute="leading" id="i8G-Vs-dQF"/>
+                            <constraint firstItem="oVs-OV-aYd" firstAttribute="top" secondItem="uyW-Ft-uBT" secondAttribute="bottom" id="tRZ-Aq-A0o"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="p5R-fP-IeX" id="CiI-CS-1vy"/>
+                        <outlet property="webView" destination="oVs-OV-aYd" id="gj1-ny-Ftt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOk-W9-HLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -90,7 +88,7 @@
                                     <constraint firstAttribute="height" constant="31" id="XB5-QG-Lwl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

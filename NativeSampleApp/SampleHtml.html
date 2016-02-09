@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <style type="text/css">
+      div {
+      text-align: center;
+    }
+
+    input {
+      text-align: center;
+    }
+  </style>
+  </head>
+  <body>
+  <div id="sample-input">
+    <input placeholder="Enter text here"></input>
+  </div>
+  <div id="test-container">
+  </div>
+  <script type="text/javascript">
+   function autorun()
+   {
+      var container = document.getElementById("test-container");
+      for (i = 0; i < 40; i++) {
+         var el = document.createElement("div");
+         el.id = i.toString();
+         el.innerHTML = "Test " + i.toString();
+         el.style.backgroundColor = getRandomColor();
+         container.appendChild(el);
+      }
+
+      function getRandomColor() {
+         var letters = '0123456789ABCDEF'.split('');
+         var color = '#';
+         for (var i = 0; i < 6; i++ ) {
+             color += letters[Math.floor(Math.random() * 16)];
+         }
+         return color;
+      }
+   }
+   if (window.addEventListener) window.addEventListener("load", autorun, false);
+   else if (window.attachEvent) window.attachEvent("onload", autorun);
+   else window.onload = autorun;
+  </script>
+  </body>
+</html>
