@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <style type="text/css">
+      div {
+          text-align: center;
+      }
+  
+  div#big-container {
+      height: 3000px;
+      background-color: #66ccff;
+  }
+  
+  div#inner-element {
+      width: 50%;
+      margin: auto;
+      margin-bottom: 5px;
+      background-color: #66ff66;
+  }
+  
+  div.generic-element {
+      width: 50%;
+      margin: auto;
+  }
+  </style>
+  </head>
+  <body>
+    <div id="big-container">
+      <div id="inner-element">Inner Element</div>
+      <div class="generic-element">Generic 0</div>
+      <div class="generic-element">Generic 1</div>
+      <div class="generic-element">Generic 2</div>
+      Big Container
+    </div>
+    <script type="text/javascript">
+        function autorun()
+        {
+            for(var i = 0; i < document.querySelectorAll(".generic-element").length; i++) {
+                var el = document.querySelectorAll(".generic-element")[i];
+                el.style.backgroundColor = getRandomColor();
+                el.addEventListener("click", function(e) {
+                  e.target.innerHTML = e.target.innerHTML + " Touched";
+                });
+            }
+            
+            function getRandomColor() {
+                var letters = '0123456789ABCDEF'.split('');
+                var color = '#';
+                for (var i = 0; i < 6; i++ ) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+        }
+    if (window.addEventListener) window.addEventListener("load", autorun, false);
+    else if (window.attachEvent) window.attachEvent("onload", autorun);
+    else window.onload = autorun;
+        </script>
+
+  </body>
+</html>

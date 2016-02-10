@@ -11,6 +11,7 @@
 		B20202C41C499B9E00FFDE8B /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20202C31C499B9E00FFDE8B /* TextFieldViewController.swift */; };
 		B20202C61C499BD100FFDE8B /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20202C51C499BD100FFDE8B /* ControlsViewController.swift */; };
 		B21537451C6A91BB00C1E7D3 /* SampleHtml.html in Resources */ = {isa = PBXBuildFile; fileRef = B21537441C6A91BB00C1E7D3 /* SampleHtml.html */; };
+		B21537491C6AAD3800C1E7D3 /* ComplexHtml.html in Resources */ = {isa = PBXBuildFile; fileRef = B21537481C6AAD3800C1E7D3 /* ComplexHtml.html */; };
 		B2548CD01C49750600CFCBC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2548CCF1C49750600CFCBC2 /* AppDelegate.swift */; };
 		B2548CD21C49750600CFCBC2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2548CD11C49750600CFCBC2 /* MainViewController.swift */; };
 		B2548CD51C49750600CFCBC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2548CD31C49750600CFCBC2 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		B20202C31C499B9E00FFDE8B /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		B20202C51C499BD100FFDE8B /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; };
 		B21537441C6A91BB00C1E7D3 /* SampleHtml.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SampleHtml.html; sourceTree = "<group>"; };
+		B21537481C6AAD3800C1E7D3 /* ComplexHtml.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ComplexHtml.html; sourceTree = "<group>"; };
 		B2548CCC1C49750600CFCBC2 /* NativeSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2548CCF1C49750600CFCBC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2548CD11C49750600CFCBC2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		B2548CCE1C49750600CFCBC2 /* NativeSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				B21537481C6AAD3800C1E7D3 /* ComplexHtml.html */,
 				B21537441C6A91BB00C1E7D3 /* SampleHtml.html */,
 				B2548CCF1C49750600CFCBC2 /* AppDelegate.swift */,
 				B2548CD11C49750600CFCBC2 /* MainViewController.swift */,
@@ -243,6 +246,7 @@
 			files = (
 				B2548CDA1C49750600CFCBC2 /* LaunchScreen.storyboard in Resources */,
 				B21537451C6A91BB00C1E7D3 /* SampleHtml.html in Resources */,
+				B21537491C6AAD3800C1E7D3 /* ComplexHtml.html in Resources */,
 				B2548CD71C49750600CFCBC2 /* Assets.xcassets in Resources */,
 				B2548CD51C49750600CFCBC2 /* Main.storyboard in Resources */,
 			);
