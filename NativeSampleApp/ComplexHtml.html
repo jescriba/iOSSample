@@ -33,6 +33,7 @@
       <div class="generic-element">Generic 1</div>
       <div class="generic-element">Generic 2</div>
       Big Container
+      <div class="generic-element">Generic Bottom</div>
     </div>
     <script type="text/javascript">
         function autorun()
@@ -43,6 +44,9 @@
                 el.addEventListener("click", function(e) {
                   e.target.innerHTML = e.target.innerHTML + " Touched";
                 });
+                if (i == document.querySelectorAll(".generic-element").length - 1) {
+                    el.style.marginTop = "2700px";
+                }
             }
             
             function getRandomColor() {
