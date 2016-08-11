@@ -11,7 +11,7 @@ class ComposeMessageViewController : UIViewController, MFMailComposeViewControll
         mf.setSubject("Test Subject")
         mf.setMessageBody("Test Message Body", isHTML: false)
         mf.setToRecipients(["TestRecipient@test.com"])
-        presentViewController(mf, animated: true, completion: nil)
+        present(mf, animated: true, completion: nil)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -20,7 +20,7 @@ class ComposeMessageViewController : UIViewController, MFMailComposeViewControll
         // Dispose of any resources that can be recreated.
     }
     
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         //
     }
 }

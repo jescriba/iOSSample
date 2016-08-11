@@ -5,8 +5,8 @@ class WKWebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let webView = WKWebView(frame: UIScreen.mainScreen().bounds)
-        webView.loadRequest(NSURLRequest(URL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("SampleHtml", ofType:"html")!)))
+        let webView = WKWebView(frame: UIScreen.main.bounds)
+        webView.load(URLRequest(url: URL(fileURLWithPath: Bundle.main.path(forResource: "SampleHtml", ofType:"html")!)))
         view.addSubview(webView)
         // Do any additional setup after loading the view, typically from a nib.
     }
