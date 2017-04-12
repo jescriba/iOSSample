@@ -6,7 +6,7 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        webView!.loadRequest(NSURLRequest(URL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("SampleHtml", ofType:"html")!)))
+        webView!.loadRequest(URLRequest(url: URL(fileURLWithPath: Bundle.main.path(forResource: "SampleHtml", ofType:"html")!)))
         // Do any additional setup after loading the view, typically from a nib.
     }
     
